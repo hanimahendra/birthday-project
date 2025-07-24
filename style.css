@@ -45,7 +45,7 @@ button:hover {
 }
 
 .letter-screen {
-  background-image: url('images/letter-bg.png');
+  background-image: url('letter-bg.png');
   background-size: cover;
   background-position: center;
   color: #111;
