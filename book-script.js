@@ -33,19 +33,20 @@ const photos = [
   { src: 'photo7.jpg', caption: 'From school chaos to video calls. 🥹' },
 ];
 
-function showFinalWish() {
-  document.getElementById('app').innerHTML = `
-    <div class="screen final-wish" style="background-color: #0b0c2a; color: white; text-align: center; padding: 50px;">
-      <h1 style="font-size: 2em;">💖 Once again, Happy Birthday, Nayii! 🎉</h1>
-      <p style="margin-top: 30px; font-size: 1.3em;">
-        Just one smile from you… and my whole world feels right. <br><br>
-        May this day be as special as you are. <br><br>
-        <strong>I’m here — to share everything with you. 😘</strong><br><br>
-        <em>I hope you liked it. 💌</em>
-      </p>
-    </div>
-  `;
-}
+function showPhotoPages(index) {
+  if (index >= photos.length) {
+    app.innerHTML = `
+      <div class="screen book-screen">
+        <h1>Once again, wishing you the happiest birthday, Nayii! 💖🎉</h1>
+        <p>You’ve always been the perfect balance — like hardware and software working in harmony.<br><br>
+        I’m all code — logic, loops, and functions.<br>
+        You? You bring soul to the system — the signals, the structure, the spark.<br><br>
+        Together, we’re not just compatible — we’re a perfect build.<br><br>
+        I hope you liked this. 💌</p>
+      </div>
+    `;
+    return;
+  }
 
   app.innerHTML = `
     <div class="screen book-screen">
