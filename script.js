@@ -66,7 +66,7 @@ function typeLetter() {
 function showCake() {
   app.innerHTML = `
     <div class="screen cake-screen">
-      <h1 class="glow">Happy Birthday Nayii 🎈</h1>
+      <h1 class="glow">Happy Birthday Nagii 🎈</h1>
       <div class="cake">
         <div class="candle" id="candle1"><div class="flame"></div></div>
         <div class="candle" id="candle2"><div class="flame"></div></div>
