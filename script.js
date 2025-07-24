@@ -3,7 +3,7 @@ const app = document.getElementById('app');
 function showWelcome() {
   app.innerHTML = `
     <div class="screen welcome">
-      <img src="images/cute-dog.jpg" alt="Cute Dog" />
+      <img src="cute-dog.jpg" alt="Cute Dog" />
       <h1>Hey Nayii, Today is your day</h1>
       <button onclick="showEnvelope()">Next</button>
     </div>
@@ -13,7 +13,7 @@ function showWelcome() {
 function showEnvelope() {
   app.innerHTML = `
     <div class="screen envelope">
-      <img src="images/envelope.jpg" alt="Envelope" />
+      <img src="envelope.jpg" alt="Envelope" />
       <h1>There is something for you</h1>
       <button onclick="showLetter()">Open</button>
     </div>
