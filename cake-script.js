@@ -1,11 +1,22 @@
-function launchBalloons() {
-  const container = document.getElementById('balloonsContainer');
-  for (let i = 0; i < 10; i++) {
-    const balloon = document.createElement('div');
-    balloon.className = 'balloon';
-    balloon.style.left = `${Math.random() * 100}vw`;
-    balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
-    balloon.style.animationDuration = `${5 + Math.random() * 5}s`;
-    container.appendChild(balloon);
-  }
+function blowCandles() {
+  const candles = document.querySelectorAll(".candle");
+  candles.forEach((candle) => {
+    candle.classList.remove("flicker");
+    candle.style.opacity = 0;
+  });
+
+  // Hide the Blow Off button
+  document.getElementById("blowButton").style.display = "none";
+
+  // Trigger balloons and confetti
+  triggerBalloons();
+  triggerConfetti();
+
+  // ✅ Create and show the Next button
+  const nextButton = document.createElement("button");
+  nextButton.textContent = "Next";
+  nextButton.className = "next-button";
+  nextButton.onclick = showFinalWish;
+
+  document.querySelector(".cake-screen").appendChild(nextButton);
 }
