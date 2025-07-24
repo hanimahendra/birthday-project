@@ -1,0 +1,67 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #0b0c2a;
+  overflow-x: hidden;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome img, .envelope img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff66b2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e0559f;
+}
+
+.letter-screen {
+  background-image: url('images/letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #111;
+  font-style: italic;
+  padding: 40px;
+}
+
+.letter-text {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 2;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#continueToCake {
+  margin-top: 20px;
+}

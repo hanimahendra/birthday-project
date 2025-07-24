@@ -1,0 +1,66 @@
+.cake-screen {
+  background-color: #0b0c2a;
+  color: white;
+}
+
+.glow {
+  color: #ff66b2;
+  text-shadow: 0 0 10px #ff66b2;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cake {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(to top, #ff99cc, #ff66b2, #ff3385);
+  border-radius: 10px;
+  margin: 0 auto 30px;
+}
+
+.candle {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: yellow;
+  top: -40px;
+}
+
+#candle1 { left: 50px; }
+#candle2 { left: 95px; }
+#candle3 { left: 140px; }
+
+.flame {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); }
+  to { transform: scale(1.3); opacity: 0.8; }
+}
+
+.balloons-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.balloon {
+  width: 30px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100vh); }
+}
