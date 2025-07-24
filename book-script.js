@@ -1,18 +1,18 @@
 function showGiftBox() {
   app.innerHTML = `
     <div class="screen book-screen">
-      <img id="giftBox" src="images/gift-box-closed.png" />
+      <img id="giftBox" src="gift-box-closed.png" />
       <button onclick="openGiftBox()">Open</button>
     </div>
   `;
 }
 
 function openGiftBox() {
-  document.getElementById('giftBox').src = 'images/gift-box-open.png';
+  document.getElementById('giftBox').src = 'gift-box-open.png';
 
   setTimeout(() => {
     const bookImg = document.createElement('img');
-    bookImg.src = 'images/animated-book.png';
+    bookImg.src = 'animated-book.png';
     bookImg.id = "book";
     document.querySelector('.book-screen').appendChild(bookImg);
 
@@ -24,29 +24,28 @@ function openGiftBox() {
 }
 
 const photos = [
-  { src: 'photos/photo1.jpg', caption: '“Soft smile, bold energy. That’s how you steal a scene." ✨' },
-  { src: 'photos/photo2.jpg', caption: '“Even the breeze paused for her entrance.”💕' },
-  { src: 'photos/photo3.jpg', caption: '“No sparkle added — she came like that.” 📸' },
-  { src: 'photos/photo4.jpg', caption: '“Did you borrow the wind’s charm or is it just your natural talent?”🌟' },
-  { src: 'photos/photo5.jpg', caption: '. “We weren’t just classmates — we were a headline act in each other’s stories.” 🧚' },
-  { src: 'photos/photo6.jpg', caption: 'do you remember this? the place where cried...' },
-  { src: 'photos/photo7.jpg', caption: 'From school chaos to video calls. 🥹' },
+  { src: 'photo1.jpg', caption: '“Soft smile, bold energy. That’s how you steal a scene." ✨' },
+  { src: 'photo2.jpg', caption: '“Even the breeze paused for her entrance.”💕' },
+  { src: 'photo3.jpg', caption: '“No sparkle added — she came like that.” 📸' },
+  { src: 'photo4.jpg', caption: '“Did you borrow the wind’s charm or is it just your natural talent?”🌟' },
+  { src: 'photo5.jpg', caption: '. “We weren’t just classmates — we were a headline act in each other’s stories.” 🧚' },
+  { src: 'photo6.jpg', caption: 'do you remember this? the place where cried...' },
+  { src: 'photo7.jpg', caption: 'From school chaos to video calls. 🥹' },
 ];
 
-function showPhotoPages(index) {
-  if (index >= photos.length) {
-    app.innerHTML = `
-      <div class="screen book-screen">
-        <h1>Once again, wishing you the happiest birthday, Nayii! 💖🎉</h1>
-        <p>You’ve always been the perfect balance — like hardware and software working in harmony.<br><br>
-        I’m all code — logic, loops, and functions.<br>
-        You? You bring soul to the system — the signals, the structure, the spark.<br><br>
-        Together, we’re not just compatible — we’re a perfect build.<br><br>
-        I hope you liked this. 💌</p>
-      </div>
-    `;
-    return;
-  }
+function showFinalWish() {
+  document.getElementById('app').innerHTML = `
+    <div class="screen final-wish" style="background-color: #0b0c2a; color: white; text-align: center; padding: 50px;">
+      <h1 style="font-size: 2em;">💖 Once again, Happy Birthday, Nayii! 🎉</h1>
+      <p style="margin-top: 30px; font-size: 1.3em;">
+        Just one smile from you… and my whole world feels right. <br><br>
+        May this day be as special as you are. <br><br>
+        <strong>I’m here — to share everything with you. 😘</strong><br><br>
+        <em>I hope you liked it. 💌</em>
+      </p>
+    </div>
+  `;
+}
 
   app.innerHTML = `
     <div class="screen book-screen">
